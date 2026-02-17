@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: AppCopy
+Class-Path: lib/Java-WebSocket-1.5.3.jar lib/jna-5.13.0.jar lib/jna-platform-5.13.0.jar lib/slf4j-api-2.0.7.jar lib/slf4j-simple-2.0.7.jar
+Implementation-Title: UNi Universal Clipboard
+Implementation-Version: 1.0.0
+Implementation-Vendor: UNi Development Team
