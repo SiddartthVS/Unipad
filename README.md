@@ -1,10 +1,10 @@
 # Unipad
 
-> **Copy on PC. Appear on Phone. Instantly.**
+> **Copy there, Paste here!!**
 
 Unipad is a real-time clipboard bridge between your **Windows PC** and your **Android phone** — no cables, no cloud, no account. Just your local Wi-Fi and a hotkey.
 
-Press **CTRL+ALT+INSERT** on your PC and whatever you copied — text, image, anything — lands on your phone's clipboard in milliseconds.
+Press **CTRL+ALT+INSERT** on your PC and whatever text you copied — lands on your phone's clipboard in milliseconds.
 
 ---
 
