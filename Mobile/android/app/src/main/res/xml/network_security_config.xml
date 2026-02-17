@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        UNipad uses ws:// (cleartext WebSocket) to talk to the PC server on the local LAN.
+        Android 9+ blocks cleartext by default in release builds.
+
+        CIDR notation (192.168.0.0/16) is NOT valid in <domain> tags — only hostnames are.
+        That's why the previous config silently failed and fell back to blocking all cleartext.
+
+        For a local-network-only app like this, the safest & correct fix is to allow
+        cleartext globally via base-config. No data ever leaves the LAN anyway.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

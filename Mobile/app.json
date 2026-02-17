@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Unipad",
+    "slug": "Unipad",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1e1e28"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1e1e28"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.Unipad",
+      "notifications": {
+        "icon": "./assets/icon.png",
+        "color": "#1e1e28"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ab8aafdd-9452-460d-8e0a-fa664c8e4075"
+      }
+    },
+    "plugins": [
+      "expo-video"
+    ]
+  }
+}
