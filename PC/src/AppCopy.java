@@ -10,6 +10,7 @@ import java.io.File;
 This is the main class of the application that creates and handles:
     - SystemTray
     - Server
+    - Discovery
     - HotKey
     - Clipboard
     - UI
@@ -27,6 +28,7 @@ public class AppCopy {
     // Instances
     private static Clipboard clipboard = new Clipboard();
     private static Connection server = new Connection(port, clipboard);
+    private static Discovery discovery = new Discovery(port);
     private static HotKey hotKey = new HotKey(server, clipboard);
 
     @SuppressWarnings("CallToPrintStackTrace")
@@ -77,6 +79,7 @@ public class AppCopy {
 
         // 2 - Server
         server.start();
+        discovery.start();
 
         // 3 - Logs
         LogManager.log("========== SESSION STARTED ==========");
@@ -180,6 +183,7 @@ public class AppCopy {
         popup.add(item("Exit", "❌", textColor, bgColor, hoverColor, false,
                 (e) -> {
                     // LogManager.log("Exit requested by user");
+                    discovery.stop();
                     LogManager.close();
                     System.exit(0);
                 }));
